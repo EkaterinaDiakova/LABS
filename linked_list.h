@@ -50,7 +50,7 @@ public:
 	    	a->next = NULL;
 	    }
 
-	    linked_list(linked_list<T>  &list)
+	    linked_list(linked_list<T>  &list)//почему не const?
 	    {
 	    	Node* a;
 
@@ -140,7 +140,7 @@ public:
 	    linked_list<T>* get_sub_list(int start_index, int end_index)
 	    {
 	    	if(((start_index * end_index) < 0) || (start_index >= m_count) || (end_index >= m_count)) throw -1;
-	    	int count = end_index - start_index + 1;
+	    	int count = end_index - start_index;
 	    	T tmp[count];
 
 	    	for(int i = 0; i < count; i++)
