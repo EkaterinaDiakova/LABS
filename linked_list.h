@@ -50,7 +50,7 @@ public:
 	    	a->next = NULL;
 	    }
 
-	    linked_list(linked_list<T>  &list)
+	    linked_list(linked_list<T>  &list)//почему не const?
 	    {
 	    	Node* a;
 
