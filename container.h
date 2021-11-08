@@ -73,14 +73,14 @@ public:
 			start = clock();
 			quick_sort(0, this->sorted_items->get_length() - 1, cmp);
 			end = clock();
-			this->lead_time = ((end - start) / CLOCKS_PER_SEC) * 1;
+			this->lead_time = ((end - start) / CLOCKS_PER_SEC) * 1000000;
 			this->if_sorted = 1;
 			break;
 		case 2:
 			start = clock();
 			shaker_sort(cmp);
 			end = clock();
-			this->lead_time = ((end - start) / CLOCKS_PER_SEC) * 1;
+			this->lead_time = ((end - start) / CLOCKS_PER_SEC) * 1000000;
 			this->if_sorted = 1;
 			break;
 		case 3:
