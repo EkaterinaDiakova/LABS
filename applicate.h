@@ -69,7 +69,7 @@ public:
 					cout << "Get sort type " << endl;
 					cout << "Enter sort type-> " << endl;
 					cin >> this->sort_type;
-					this->cur_container->sort(sort_type, cmp2);
+					this->cur_container->sort(sort_type, cmp1);
 					break;
 				case 2:
 					cout << "Get container " << endl;
